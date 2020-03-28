@@ -10,7 +10,7 @@ So, this page is dedicated to my programming projects (scientific and also assis
 
 ## Assistive technologies
 
-- [Dual Voice for NVDA](https://mahmood-taghavi.github.io/dual_voice/) is a project developed in Python programming language which adds support for multilingual speech to a famous assistive technology namely NVDA. 
+- [Dual Voice for NVDA](https://mahmood-taghavi.github.io/dual_voice/) is a project developed in Python programming language which adds support for multilingual speech to a famous screen reader software namely NVDA (screen readers are software which let blind and visually impaired users interact with computers).
 - [eSpeakPlus](https://mahmood-taghavi.github.io/eSpeakPlus/) is a collection of espeak Text To Speech (TTS) engine for Windows, Mbrola library, some Mbrola voices (ir1; de6; de7; en1; us1; us2; us3), and the NVDA defined voice variants including the famous "Max". This suite supports Persian and other languages and has the standard SAPI 5 speech driver. It also contains phonetic translation files for two Mbrola diphone databases namely de6 and de7 which enable espeak to read Persian and English text using the aforementioned German diphones. 
 - [SAPI_Unifier](https://mahmood-taghavi.github.io/SAPI_Unifier/) is a free tool developed in Visual C# to Unify installed Microsoft OneCore voices and Microsoft Speech Server voices with Microsoft Speech API version 5 (SAPI 5) in Windows. So visually impaired users can use and enjoy all these voices as standard SAPI 5 voices.  
 
