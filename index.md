@@ -1,7 +1,7 @@
 # Mahmood Taghavi homepage at GitHub
 
-I am a biostatistician with interests in statistics, epidemiology, and computer science. You can see my scientific publications and reviews in [my Publons profile](https://publons.com/researcher/1553453/seyed-mahmood-taghavi-shahri/) and general information about me at [my LinkedIn profile](https://www.linkedin.com/in/mahmood-taghavi-03836940/). 
-So, this page is dedicated to my programming projects (scientific and also assistive technologies that I developed in my spare time).
+I am a biostatistician with interests in statistics, epidemiology, and computer science. You can see my English scientific publications and reviews in [my Publons profile](https://publons.com/researcher/1553453/seyed-mahmood-taghavi-shahri/) and find general information about me at [my LinkedIn profile](https://www.linkedin.com/in/mahmood-taghavi-03836940/). 
+Hence, this page is dedicated to my programming projects (scientific and also assistive technologies that I developed in my spare time).
 
 ## Scientific projects
 
