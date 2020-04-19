@@ -5,7 +5,7 @@ Hence, this page is dedicated to my programming projects (scientific and also as
 
 ## Scientific projects
 
-  - [Ridit](https://github.com/Mahmood-Taghavi/Ridit) is a package for Ridit analysis in **R** statistical environment. It also is available from CRAN (The Comprehensive R Archive Network). 
+  - [Ridit](https://github.com/Mahmood-Taghavi/Ridit) is a package for Ridit analysis in **R** statistical environment. It also is available from [CRAN](https://cran.r-project.org/package=Ridit) (The Comprehensive R Archive Network). 
   - [d-stem-LUR](https://github.com/Mahmood-Taghavi/d-stem-LUR) is data and **Matlab** codes repository for one of my papers entitled "Concurrent spatiotemporal daily land use regression modeling and missing data imputation of fine particulate matter using distributed space-time expectation maximization" which is appeared in the [Atmospheric Environment journal](http://doi.org/10.1016/j.atmosenv.2019.117202).
 
 ## Assistive technologies
