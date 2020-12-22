@@ -1,11 +1,12 @@
 # Mahmood Taghavi homepage at GitHub
 
-I am a biostatistician with interests in statistics, epidemiology, data science, and computer science. You can find general information about me at [my LinkedIn profile](https://www.linkedin.com/in/mahmood-taghavi-03836940/) and view the list of my English scientific publications at [my Scopus profile](https://www.scopus.com/authid/detail.uri?authorId=37075817900). 
-Hence, this page is dedicated to my open source projects (scientific projects and also assistive technologies that I developed in my spare time) which were written in R, Matlab, Python, and C# dot Net programming languages.  
+I am a biostatistician with interests in statistics, epidemiology, and computer science. Please feel free to visit [my LinkedIn profile](https://www.linkedin.com/in/mahmood-taghavi-03836940/) for general information about me or see my [Google Scholar profile](https://scholar.google.com/citations?user=plLILOAAAAAJ) for the full list of my scientific publications.
+However, this page is dedicated to my open source projects (scientific projects and also assistive technologies that I developed in my spare time) which were written in R, R Shiny, Matlab, Python, and C# dot Net programming languages.  
 
 ## Scientific projects
 
   - [Ridit](https://github.com/Mahmood-Taghavi/Ridit) is a package for Ridit analysis in **R** statistical environment. It is also available from [CRAN](https://cran.r-project.org/package=Ridit) (The Comprehensive R Archive Network). 
+  - [FLUR](https://github.com/Mahmood-Taghavi/FLUR) is an interactive **R Shiny** web app that is designed to present the result of a functional regression model for spatial prediction of airborne particulate matter diurnal variation curves in the mega-city of Tehran. 
   - [d-stem-LUR](https://github.com/Mahmood-Taghavi/d-stem-LUR) is the data and **Matlab** codes repository for one of my papers entitled "Concurrent spatiotemporal daily land use regression modeling and missing data imputation of fine particulate matter using distributed space-time expectation maximization" which is appeared in the [Atmospheric Environment journal (IF = 4.012)](http://doi.org/10.1016/j.atmosenv.2019.117202).
 
 ## Assistive technologies
