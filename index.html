@@ -2,7 +2,8 @@
 <html>
 <head>
 <meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
-<title>Mahmood Taghavi</title><link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; --title-bar-height:20px; }
+
+<link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; --title-bar-height:20px; }
 .mac-os-11 { --title-bar-height:28px; }
 html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
 body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
@@ -66,7 +67,7 @@ div.hr:focus { cursor: none; }
 #write pre.ty-contain-cm { white-space: normal; }
 .CodeMirror-gutters { margin-right: 4px; }
 .md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
-.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
 #write .md-fences.mock-cm { white-space: pre-wrap; }
 .md-fences.md-fences-with-lineno { padding-left: 0px; }
 #write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
@@ -91,6 +92,7 @@ blockquote > :first-child, li > :first-child { margin-top: 0px; }
   .typora-export #write { break-after: avoid; }
   .typora-export #write::after { height: 0px; }
   .is-mac table { break-inside: avoid; }
+  .typora-export-show-outline .typora-export-sidebar { display: none; }
 }
 .footnote-line { margin-top: 0.714em; font-size: 0.7em; }
 a img, img a { cursor: pointer; }
@@ -137,11 +139,12 @@ code { text-align: left; vertical-align: initial; }
 a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
 .md-inline-math .MathJax_SVG .noError { display: none !important; }
 .html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
-.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
+.md-fences-math .MathJax_SVG_Display, .md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: visible; display: block !important; }
 .MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
 .MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
 .MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
-.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; overflow-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; overflow-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; zoom: 90%; }
+#math-inline-preview-content { zoom: 1.1; }
 .MathJax_SVG * { transition: none 0s ease 0s; }
 .MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
 .os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
@@ -154,7 +157,8 @@ iframe { max-width: 100%; width: 100%; border: none; }
 .highlight td, .highlight tr { border: 0px; }
 mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
 .md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
-mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
+.md-expand mark .md-meta { opacity: 0.3 !important; }
+mark .md-meta { color: rgb(0, 0, 0); }
 @media print {
   .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
 }
@@ -162,6 +166,50 @@ mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
 .md-diagram-panel .start-state { fill: var(--node-fill); }
 .md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
 .md-require-zoom-fix foreignobject { font-size: var(--mermaid-font-zoom); }
+.md-fences.md-fences-math { font-size: 1em; }
+.md-fences-math .MathJax_SVG_Display { margin-top: 8px; cursor: default; }
+.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
+.md-fences-advanced:not(.md-focus) { background: inherit; }
+.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
+.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
+.typora-export-show-outline #write { --webkit-flex:2; flex: 2 1 0%; }
+.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
+@media screen and (max-width: 1024px) {
+  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
+}
+@media screen and (max-width: 800px) {
+  .typora-export-sidebar { display: none; }
+}
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; }
+.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
+.outline-content strong { font-weight: 400; }
+.outline-expander { width: 1rem; height: 1.42857rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
+.outline-expander:hover::before { content: ""; }
+.outline-h1 > .outline-item { padding-left: 0px; }
+.outline-h2 > .outline-item { padding-left: 1em; }
+.outline-h3 > .outline-item { padding-left: 2em; }
+.outline-h4 > .outline-item { padding-left: 3em; }
+.outline-h5 > .outline-item { padding-left: 4em; }
+.outline-h6 > .outline-item { padding-left: 5em; }
+.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
+.outline-label:hover { text-decoration: underline; }
+.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left: 28px solid transparent; border-right: 28px solid transparent; }
+.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.outline-children { display: none; }
+.info-panel-tab-wrapper { display: none; }
+.outline-item-open > .outline-children { display: block; }
+.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right: 8px solid transparent; }
+.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
+.typora-export-collapse-outline .outline-children { display: none; }
+.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
+.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
+.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
 
 
 :root {
@@ -349,7 +397,7 @@ table {
     word-break: initial;
 }
 table tr {
-    border-top: 1px solid #dfe2e5;
+    border: 1px solid #dfe2e5;
     margin: 0;
     padding: 0;
 }
@@ -523,9 +571,9 @@ header, .context-menu, .megamenu-content, footer{
     color: #b4654d;
 }
 
-.html-for-mac .context-menu {
+/*.html-for-mac {
     --item-hover-bg-color: #E6F0FE;
-}
+}*/
 
 #md-notification .btn {
     border: 0;
@@ -533,6 +581,7 @@ header, .context-menu, .megamenu-content, footer{
 
 .dropdown-menu .divider {
     border-color: #e5e5e5;
+    opacity: 0.4;
 }
 
 .ty-preferences .window-content {
@@ -544,11 +593,17 @@ header, .context-menu, .megamenu-content, footer{
     background: #999;
 }
 
+.menu-item-container a.menu-style-btn {
+    background-color: #f5f8fa;
+    background-image: linear-gradient( 180deg , hsla(0, 0%, 100%, 0.8), hsla(0, 0%, 100%, 0)); 
+}
 
-</style>
+
+
+</style><title>Mahmood Taghavi</title>
 </head>
-<body class='typora-export'>
-<div id='write'  class=''><h1><a name="mahmood-taghavi-homepage-at-github" class="md-header-anchor"></a><span>Mahmood Taghavi homepage at GitHub</span></h1><p><span>I am a biostatistician with interests in statistics, epidemiology, and computer science. Please feel free to visit </span><a href='https://www.linkedin.com/in/mahmood-taghavi-03836940/'><span>my LinkedIn profile</span></a><span> for general information about me or see my </span><a href='https://scholar.google.com/citations?user=plLILOAAAAAJ'><span>Google Scholar profile</span></a><span> for the full list of my scientific publications.</span>
-<span>However, this page is dedicated to my open source projects (scientific projects and also assistive technologies that I developed in my spare time) which were written in R, R Shiny, Matlab, Python, and C# dot Net programming languages.  </span></p><h2><a name="scientific-projects" class="md-header-anchor"></a><span>Scientific projects</span></h2><ul><li><a href='https://github.com/Mahmood-Taghavi/Ridit'><span>Ridit</span></a><span> is a package for Ridit analysis in </span><strong><span>R</span></strong><span> statistical environment. It is also available from </span><a href='https://cran.r-project.org/package=Ridit'><span>CRAN</span></a><span> (The Comprehensive R Archive Network). </span></li><li><a href='https://github.com/Mahmood-Taghavi/FLUR'><span>FLUR</span></a><span> is an interactive </span><strong><span>R Shiny</span></strong><span> web app that is designed to present the result of a functional regression model for spatial prediction of airborne particulate matter diurnal variation curves in the mega-city of Tehran. </span></li><li><a href='https://github.com/Mahmood-Taghavi/d-stem-LUR'><span>d-stem-LUR</span></a><span> is the data and </span><strong><span>Matlab</span></strong><span> codes repository for one of my papers entitled &quot;Concurrent spatiotemporal daily land use regression modeling and missing data imputation of fine particulate matter using distributed space-time expectation maximization&quot; which is appeared in the </span><a href='http://doi.org/10.1016/j.atmosenv.2019.117202'><span>Atmospheric Environment journal (IF = 4.012)</span></a><span>.</span></li></ul><h2><a name="assistive-technologies" class="md-header-anchor"></a><span>Assistive technologies</span></h2><ul><li><a href='https://mahmood-taghavi.github.io/dual_voice/'><span>Dual Voice for NVDA</span></a><span> is an open source software developed in </span><strong><span>Python</span></strong><span> programming language which adds support for multilingual speech to a famous screen reader software namely NVDA (screen readers are software which let blind and visually impaired users to interact with their computers).</span></li><li><a href='https://mahmood-taghavi.github.io/SAPI_Unifier/'><span>SAPI_Unifier</span></a><span> is an open source software developed in </span><strong><span>C# dot Net</span></strong><span> to Unify installed Microsoft OneCore voices and Microsoft Speech Server voices with Microsoft Speech API version 5 (SAPI 5) in Windows. So visually impaired users can use and enjoy all of them as standard SAPI 5 voices.  </span></li><li><a href='https://mahmood-taghavi.github.io/eSpeakPlus/'><span>eSpeakPlus</span></a><span> is a collection of espeak Text To Speech (TTS) engine for Windows, Mbrola speech synthesis library, some of Mbrola voices (ir1; de6; de7; en1; us1; us2; us3), and the NVDA defined voice variants including the famous &quot;max&quot;. This suite supports Persian and other languages and has the standard SAPI 5 speech driver. It also contains </span><strong><span>phonetic translation</span></strong><span> files for two Mbrola diphone voices namely de6 and de7 which make enable espeak TTS to read Persian and English text using the aforementioned German voices. </span></li></ul></div>
+<body class='typora-export'><div class='typora-export-content'>
+<div id='write'  class=''><h1 id='mahmood-taghavi-homepage-at-github'><span>Mahmood Taghavi homepage at GitHub</span></h1><p><span>I am a biostatistician with interests in statistics, epidemiology, and computer science. Please feel free to visit </span><a href='https://www.linkedin.com/in/mahmood-taghavi-03836940/'><span>my LinkedIn profile</span></a><span> for general information about me or see my </span><a href='https://scholar.google.com/citations?user=plLILOAAAAAJ'><span>Google Scholar profile</span></a><span> for the full list of my scientific publications.</span>
+<span>However, this page is dedicated to my open source projects (scientific projects and also assistive technologies that I developed in my spare time) which were written in R, R Shiny, Matlab, Python, and C# dot Net programming languages.  </span></p><h2 id='scientific-projects'><span>Scientific projects</span></h2><ul><li><a href='https://github.com/Mahmood-Taghavi/Ridit'><span>Ridit</span></a><span> is a package for Ridit analysis in </span><strong><span>R</span></strong><span> statistical environment. It is also available from </span><a href='https://cran.r-project.org/package=Ridit'><span>CRAN</span></a><span> (The Comprehensive R Archive Network). </span></li><li><a href='https://github.com/Mahmood-Taghavi/FLUR'><span>FLUR</span></a><span> is an interactive </span><strong><span>R Shiny</span></strong><span> web app that is designed to present the result of a functional regression model for spatial prediction of airborne particulate matter diurnal variation curves in the mega-city of Tehran. This app is now online at </span><a href='https://mahmood-taghavi.shinyapps.io/flur/'><span>https://mahmood-taghavi.shinyapps.io/flur/</span></a><span>.</span></li><li><a href='https://github.com/Mahmood-Taghavi/d-stem-LUR'><span>d-stem-LUR</span></a><span> is the data and </span><strong><span>Matlab</span></strong><span> codes repository for one of my papers entitled &quot;Concurrent spatiotemporal daily land use regression modeling and missing data imputation of fine particulate matter using distributed space-time expectation maximization&quot; which is appeared in the </span><a href='http://doi.org/10.1016/j.atmosenv.2019.117202'><span>Atmospheric Environment journal (IF = 4.012)</span></a><span>.</span></li></ul><h2 id='assistive-technologies'><span>Assistive technologies</span></h2><ul><li><a href='https://mahmood-taghavi.github.io/dual_voice/'><span>Dual Voice for NVDA</span></a><span> is an open source software developed in </span><strong><span>Python</span></strong><span> programming language which adds support for multilingual speech to a famous screen reader software namely NVDA (screen readers are software which let blind and visually impaired users to interact with their computers).</span></li><li><a href='https://mahmood-taghavi.github.io/SAPI_Unifier/'><span>SAPI_Unifier</span></a><span> is an open source software developed in </span><strong><span>C# dot Net</span></strong><span> to Unify installed Microsoft OneCore voices and Microsoft Speech Server voices with Microsoft Speech API version 5 (SAPI 5) in Windows. So visually impaired users can use and enjoy all of them as standard SAPI 5 voices.  </span></li><li><a href='https://mahmood-taghavi.github.io/eSpeakPlus/'><span>eSpeakPlus</span></a><span> is a collection of espeak Text To Speech (TTS) engine for Windows, Mbrola speech synthesis library, some of Mbrola voices (ir1; de6; de7; en1; us1; us2; us3), and the NVDA defined voice variants including the famous &quot;max&quot;. This suite supports Persian and other languages and has the standard SAPI 5 speech driver. It also contains </span><strong><span>phonetic translation</span></strong><span> files for two Mbrola diphone voices namely de6 and de7 which make enable espeak TTS to read Persian and English text using the aforementioned German voices. </span></li></ul></div></div>
 </body>
 </html>

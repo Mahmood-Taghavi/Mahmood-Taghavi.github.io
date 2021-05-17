@@ -6,7 +6,7 @@ However, this page is dedicated to my open source projects (scientific projects 
 ## Scientific projects
 
   - [Ridit](https://github.com/Mahmood-Taghavi/Ridit) is a package for Ridit analysis in **R** statistical environment. It is also available from [CRAN](https://cran.r-project.org/package=Ridit) (The Comprehensive R Archive Network). 
-  - [FLUR](https://github.com/Mahmood-Taghavi/FLUR) is an interactive **R Shiny** web app that is designed to present the result of a functional regression model for spatial prediction of airborne particulate matter diurnal variation curves in the mega-city of Tehran. 
+  - [FLUR](https://github.com/Mahmood-Taghavi/FLUR) is an interactive **R Shiny** web app that is designed to present the result of a functional regression model for spatial prediction of airborne particulate matter diurnal variation curves in the mega-city of Tehran. This app is now online at [https://mahmood-taghavi.shinyapps.io/flur/](https://mahmood-taghavi.shinyapps.io/flur/).
   - [d-stem-LUR](https://github.com/Mahmood-Taghavi/d-stem-LUR) is the data and **Matlab** codes repository for one of my papers entitled "Concurrent spatiotemporal daily land use regression modeling and missing data imputation of fine particulate matter using distributed space-time expectation maximization" which is appeared in the [Atmospheric Environment journal (IF = 4.012)](http://doi.org/10.1016/j.atmosenv.2019.117202).
 
 ## Assistive technologies
